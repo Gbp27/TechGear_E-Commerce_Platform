@@ -54,7 +54,7 @@
             <p>Shipping Company: UPS</p>
             <p>Shipping Class: Priority Mail</p>
             <p>Tracking number: 483205741-07483</p>
-            <!--image of the barcode -->
+            <img src ="images/barcode.avif" alt = "barcode image" width = 200 px >
             <p>Order Number: <?php echo $order ?></p>
             <p>Ship Date: <?php echo $date ?></p>
 
