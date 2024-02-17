@@ -1,3 +1,9 @@
+<!--Name: Geetha Punukollu-->
+<!--Date: February 16 2024-->
+<!--Course/Section: IT-202-004-->
+<!--Assignment Name: Phase 1-->
+<!--Email: gbp@njit.edu-->
+
 <html>
     <header>
         <title>Shipping Page</title>

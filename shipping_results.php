@@ -1,3 +1,9 @@
+<!--Name: Geetha Punukollu-->
+<!--Date: February 16 2024-->
+<!--Course/Section: IT-202-004-->
+<!--Assignment Name: Phase 1-->
+<!--Email: gbp@njit.edu-->
+
 <?php
     $first_name = filter_input(INPUT_POST, 'first_name');
     $last_name = filter_input(INPUT_POST, 'last_name');
