@@ -1,0 +1,33 @@
+h1, h2, body {
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+    background-color: #c5cad4;
+}
+div {
+    width: 700px;
+    border: 15px;
+    padding: 5px;
+    margin: 20px;
+}
+#first {
+    background-color: #b6c2d9;
+}
+
+#second {
+    background-color: #97a2b5;
+}
+
+#third {
+    margin: #787f8d;
+}
+
+#fourth {
+    margin: #636874;
+}
+
+#fifth {
+    margin: #535861;
+}
+
+#sixth {
+    margin: #434850;
+}
