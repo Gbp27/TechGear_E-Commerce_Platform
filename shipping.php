@@ -5,10 +5,10 @@
 <!--Email: gbp@njit.edu-->
 
 <html>
-    <header>
+    <head>
         <title>Shipping Page</title>
         <link rel="stylesheet" href="project_style.css" />
-    </header>
+    </head>
     <body>
         <?php include('projectHeader.php'); ?>
         <form action="shipping_results.php" method="post">

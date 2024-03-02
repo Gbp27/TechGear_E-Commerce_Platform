@@ -9,9 +9,28 @@
     <h4>
     <table>
         <tr>
-            <td><a href="home.php">Home | </a> Wireless Earbuds | Bluetooth Keyboard | Portable Phone Charger</td>
-        </tr><tr>
-            <td>Laptop Stand | Laptop Backpack | <a href="shipping.php">Purchase Link</a></td>
+            <td><a href="home.php">Home </a> 
+            
+            <?php require_once('database_njit.php') ;
+        $queryAllCategories = 'SELECT * FROM techCategories ORDER BY techcategoryID';
+        $statement2 = $db->prepare($queryAllCategories);
+        $statement2->execute();
+        $categories = $statement2->fetchAll();
+        //$statement2->closeCursor();
+
+        //for ($counter = 0; $counter < $total_column; $counter ++) {
+            //$meta = $statement2->getColumnMeta($counter);
+          //  $column[] = $meta['name'];
+        //}
+        //print_r($column);
+        ?>
+
+                <?php foreach($categories as $category) : ?>                  
+                        | 
+                        <a href="categories.php?category_id=<?php echo $category[0]; ?>"><?php echo $category[1]; ?></a>
+                <?php endforeach ?>
+            
+            <a href="shipping.php">| Purchase Link</a></td>
         </tr>
     </table>
     <h4>

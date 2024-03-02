@@ -1,5 +1,4 @@
 
-
 h1, h2, body {
     font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
     background-color: #c5cad4;
@@ -31,5 +30,9 @@ div {
 }
 
 #sixth {
-    margin: #434850;
+    margin: #434850; border: 1
+}
+
+#prods, th, td {
+    border: 1px solid;
 }
