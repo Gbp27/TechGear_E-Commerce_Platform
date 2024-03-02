@@ -5,6 +5,7 @@
 <!--Email: gbp@njit.edu-->
 
 <header>
+<link rel="stylesheet" href="project_style.css" />
     <h1>Essential Tech Accessories</h1>
     <h4>
     <table>
