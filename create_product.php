@@ -1,8 +1,9 @@
 <?php
-// DEBUGGING ONLY
-// echo "<pre>";
-// print_r($_POST);
-// echo "</pre>";
+//Name: Geetha Punukollu
+//Date: March 22 2024
+//Course/Section: IT-202-004
+//Assignment Name: Phase 3
+//Email: gbp@njit.edu
 
 // Get the product data
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);

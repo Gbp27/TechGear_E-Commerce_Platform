@@ -1,5 +1,9 @@
 <?php
-// TODO Change to database_local.php or database_njit.php
+//Name: Geetha Punukollu
+//Date: March 22 2024
+//Course/Section: IT-202-004
+//Assignment Name: Phase 3
+//Email: gbp@njit.edu
 require_once('database_njit.php');
 
 $query = 'SELECT *
