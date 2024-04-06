@@ -9,6 +9,7 @@ require_once('database_njit.php');
 $query = 'SELECT *
           FROM techCategories
           ORDER BY techCategoryID';
+$db = getDB();
 $statement = $db->prepare($query);
 $statement->execute();
 $categories = $statement->fetchAll();

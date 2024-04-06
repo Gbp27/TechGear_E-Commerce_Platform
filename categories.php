@@ -6,7 +6,7 @@
 
 <!DOCTYPE html>
 <html>
-    <header>
+    <header> 
         <title>Home Page</title>
         
     </header>
@@ -29,6 +29,7 @@
                 // Get name for selected category
                 $queryCategory = 'SELECT * FROM techCategories
                           WHERE techCategoryID = :category_id';
+                $db = getDB();
                 $statement1 = $db->prepare($queryCategory);
                 $statement1->bindValue(':category_id', $category_id);
                 $statement1->execute();
@@ -46,6 +47,7 @@
                 $queryProducts = 'SELECT * FROM techAccessories
                         WHERE techCategoryID = :category_id
                         ORDER BY techID';
+                $db = getDB();
                 $statement3 = $db->prepare($queryProducts);
                 $statement3->bindValue(':category_id', $category_id);
                 $statement3->execute();
@@ -61,6 +63,19 @@
                     <td><?php echo $product['description']; ?></td>
                     <td><?php echo $product['color']; ?></td>
                     <td><?php echo $product['price']; ?></td>
+                    <?php if ($_SESSION['is_valid_admin'] == true) { ?>
+                        <td>
+                        <form action="delete_product.php" method="post">
+                        <input type="hidden" name="tech_id"
+                            value="<?php echo $product['techID']; ?>" />
+                        <input type="hidden" name="techCategory_id"
+                            value="<?php echo $product['techCategoryID']; ?>" />
+                        <input type="submit" value="Delete" />
+                        </form>
+                    </td>
+
+                    <?php } ?>
+                    
                 </tr>
                 <?php endforeach; ?>            
 

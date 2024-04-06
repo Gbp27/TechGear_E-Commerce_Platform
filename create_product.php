@@ -24,6 +24,7 @@ if ($category_id == NULL || $category_id == FALSE || $code == NULL ||
 
     //validation to make sure code is unique
     $query1 = 'SELECT * FROM techAccessories WHERE techCode = :code';
+    $db = getDB();
     $statement1 = $db->prepare($query1);
     $statement1->bindValue(':code', $code);
     $statement1->execute();
@@ -35,6 +36,7 @@ if ($category_id == NULL || $category_id == FALSE || $code == NULL ||
                  (techcategoryID, techCode, techName, description, color, price, dateCreated)
               VALUES
                  (:category_id, :code, :name, :description, :color, :price, NOW())';
+        $db = getDB();
         $statement2 = $db->prepare($query2);
         $statement2->bindValue(':category_id', $category_id);
         $statement2->bindValue(':code', $code);
