@@ -37,7 +37,8 @@
                 <?php endforeach ?>
                 <?php if ($_SESSION['is_valid_admin'] = true) { ?>
                     | <a href="shipping.php">Purchase Link</a> | 
-                    <a href="create_product_form.php">Create Product</a>
+                    <a href="create_product_form.php">Create Product</a> | 
+                    <a href="shipping.php">Ship Product</a>
                 <?php } ?>
 
             <?php 

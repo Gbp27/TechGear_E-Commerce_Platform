@@ -45,25 +45,29 @@ $statement->closeCursor();
             </select>
             <br>
             <label>Code:</label>
-            <input type="text" name="code"><br>
+            <input type="text" name="code" id="code" minlength="4" maxlength="10" required><br>
 
             <label>Name:</label>
-            <input type="text" name="name"><br>
+            <input type="text" name="name" id="name" minlength="10" maxlength="100" required><br>
 
             <label>Description:</label>
-            <input type="text" style="height:100px; width:350px;" name="description"><br>
+            <input type="text" style="height:100px; width:350px;" name="description" id="description" minlength="10" maxlength="255" required><br>
 
             <label>Color:</label>
-            <input type="text" name="color"><br>
+            <input type="text" name="color" id="color" required><br>
 
             <label>List Price:</label>
-            <input type="text" name="price"><br>
+            <input type="number" name="price" id="price" min="1" max="100000" required><br>
 
             <input type="submit" value="Add Product"><br>
+            <input type="reset" value="Clear Form" id="reset_button"/>
         </form>
         <p><a href="categories.php">View Product List</a></p>
     </main>
-
+    <!-- copy-paste from releases.jquery.com -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <!-- copy-paste from releases.jquery.com -->
+    <script src="clear_button.js"></script>
     <footer>
         <?php include('projectFooter.php'); ?>
     </footer>

@@ -36,3 +36,8 @@ div {
 #prods, th, td {
     border: 1px solid;
 }
+
+.prodimgs:hover {
+    filter: blur(4px);
+    transition: 0.5s ease-in-out;
+}
