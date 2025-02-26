@@ -1,1 +1,1 @@
-# IT202-gbp-Project
+# TechGear_E-Commerce_Platform_Project
